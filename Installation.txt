@@ -1,0 +1,6 @@
+01. Download and Install NodeJS
+    https://nodejs.org/en/
+
+02. Install Vue CLI
+    https://cli.vuejs.org/
+    
