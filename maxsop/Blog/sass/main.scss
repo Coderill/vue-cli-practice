@@ -1,0 +1,17 @@
+//Import bootstrap
+@import'../vendor/bootstrap/scss/bootstrap.scss';
+
+//varriables 
+@import '../sass/varriables.scss';
+
+//global styles
+@import'../sass/global.scss';
+
+//components
+@import'../sass/header.scss';
+@import'../sass/featured-area';
+@import'../sass/posts.scss';
+@import'../sass/aside.scss';
+@import'../sass/newsletter.scss';
+@import'../sass/footer.scss';
+@import'../sass/single-blog';

@@ -1,0 +1,42 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Lora:400,400i,700,700i&display=swap');
+
+/*==============
+  Global styles 
+  ==============*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-weight: 400;
+    font-family: 'Lora', serif;
+    color: $secondary-color;
+}
+a,a:hover{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    margin-bottom: 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin-bottom: 0;
+}
+
+/*==============
+  Layout
+  ==============*/
+.main-wrapper{
+    padding: 3.125rem 0;
+}
+@media screen and(max-width:992px){
+    .main-wrapper{
+        padding: 1.25rem 0;
+    }
+}
+.img-250{
+    height: 250px;
+    object-fit: cover;
+}

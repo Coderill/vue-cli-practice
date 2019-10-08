@@ -1,0 +1,111 @@
+/*==============
+  Layout 
+==============*/
+.aside-single{
+    padding:1.5rem;
+    .header{
+        color: #222;
+        padding-bottom: 0.625rem;
+        margin-bottom: 0.625rem;
+        border-bottom: .8px solid rgba($secondary-color,.5);
+        font-weight: 600;
+        a{
+            color: #222;
+        }
+    }
+}
+
+/*==============
+ Components
+==============*/
+/*category*/
+aside{
+    .categories{
+        ul{
+            li{
+                a{
+                    display: inline-block;
+                    color:$secondary-color;
+                    position: relative;
+                    margin-left: 20px;
+                    transition: 0.3s ease-in;
+                    &:hover{
+                        color: $primary-color;
+                    }
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        width: 7px;
+                        height: 7px;
+                        background: $primary-color;
+                        left: -20px;
+                        top: 40%;
+                        border-radius: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+                &:not(:last-child){
+                    a{
+                        padding-bottom: 0.625rem;
+                    }
+                }
+            }
+        }
+    }
+}
+/*Popular stories*/
+aside{
+    .intersting-posts.single{
+        padding: 0;
+        .header{
+            a{
+                color: #222;
+            }
+        }
+    }
+    .post-single{
+        .post-index{
+            font-size: 1.5rem;
+            max-width: 60px;
+            width: 100%;
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+        }
+        .post-body{
+            .title{
+                font-size: 1.125rem;
+                font-weight: 600;
+                margin-bottom: 0.3125rem;
+                a{
+                    color: #222;
+                    transition: 0.3s ease-in;
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+            }
+            .metaline{
+                font-size: 0.875rem;
+                a{
+                    color: $secondary-color;
+                    transition: 0.3s ease-in;
+                    &:hover{
+                        color:$primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+/*Tranding posts*/
+aside{
+    .trending-posts,.podcast{
+        .single{
+            .title{
+                font-size: 1.125rem;
+                line-height: 1.625rem;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,98 @@
+header{
+    /*logo*/
+    .logo{
+        text-align: center;
+        padding: 2.5rem 0 1.25rem 0;
+        img{
+            max-width: 200px;
+        }
+    }
+    /*nav*/
+    nav{
+        .navbar-toggler{
+            i{
+                color: $primary-color;
+            }
+        }
+        .nav-item .nav-link{
+            padding: 1rem!important;
+            font-family: 'Lato', sans-serif;
+            color: $secondary-color;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            font-weight: 700;
+            letter-spacing: .5px;
+            transition: 0.3s ease-in;
+            &:hover{
+                color: #222;
+            }
+        }
+        .nav-item.active a{
+            position: relative;
+            color: #222;
+            &::before{
+                content: ".";
+                position: absolute;
+                color: $primary-color;
+                font-size: 25px;
+                left: 5px;
+                top: -5px;
+            }
+        }
+        .nav-right{
+            .social{
+                a{
+                    display: inline-block;
+                    padding: 0 .7rem!important;
+                    font-size: 1.1rem;
+                    color: $secondary-color;
+                    transition: 0.3s ease-in;
+                    &:hover{
+                        color: #222;
+                    }
+                }
+            }
+            .search{
+                button{
+                    background: $primary-color;
+                    color: #fff;
+                    font-size: 1rem;
+                    line-height: 10px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 992px){
+    header{
+        .logo{
+            padding: 1.5rem 0 1.25rem 0;
+        }
+        nav{
+            .navbar-collapse{
+                margin-top: 1.25rem;
+            }
+            .nav-item{
+                .nav-link{
+                    padding: .7rem 1rem !important;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 576px){
+    header{
+        nav{
+            .nav-right{
+                .social{
+                    a{
+                        padding: 0 0.5rem !important;
+                    }
+                }
+                .search{
+                    max-width: 160px;
+                }
+            }
+        }
+    }
+}

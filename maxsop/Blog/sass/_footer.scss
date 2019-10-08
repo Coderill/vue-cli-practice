@@ -1,0 +1,35 @@
+footer{
+    background-image: url(../image/Untitled-1.svg);
+    background-position:center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4rem 0 1.5rem 0;
+    .social{
+        margin-bottom: 0.625rem;
+        a{
+            display: inline-block;
+            color: $primary-color;
+            line-height: 1.875rem;
+            border-radius: 50%;
+            width: 1.875rem;
+            height: 1.875rem;
+            background: #fff;
+            transition: 0.3s ease-in;
+            &:hover{
+                background: rgba(#fff,.7);
+            }
+        }
+    }
+    .copyright{
+        font-family: 'Lato', sans-serif;
+        color: #fff;
+        p:first-child{
+            margin-bottom: 0.3125rem;
+        }
+        a{
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+    }
+}
