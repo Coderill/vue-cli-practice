@@ -4,7 +4,7 @@ import router from './router'
 
 import jQuery from 'jquery'
 import 'popper.js'
-import Bootstrap from 'bootstrap'
+import 'bootstrap'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'

@@ -1,11 +1,7 @@
-# Lesson 4
+# Lesson 5
 
-1. Review lesson 3
-2. Install 3rd party plugins/library
-3. Install multiple plugins/library at a time
-4. How to use jquery
-5. How to import static file in SCSS 
-6. Import fontawesome brand icons [Fontawesome](https://fontawesome.com/)
-
-Fontawesome for Vue:
-[vue-fontawesome](https://github.com/FortAwesome/vue-fontawesome)
+1. Review lesson 4
+2. Two way data binding
+3. Vue for loop
+4. Vue 'data' property in instance and component
+5. Vue data to template
