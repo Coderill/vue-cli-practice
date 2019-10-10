@@ -45,8 +45,8 @@
 
                     <!-- Social -->
                     <div class="social mr-3">
-                        <a href="#"><i class="icon ion-logo-github" aria-label="Github"></i></a>
-                        <a href="#"><i class="icon ion-logo-twitter" aria-label="Twitter"></i></a>
+                        <a href="#"><font-awesome-icon :icon="['fab', 'github']" /></a>
+                        <a href="#"><font-awesome-icon :icon="['fab', 'twitter']" /></a>
                     </div>
                     <!-- End of the social -->
 
@@ -55,7 +55,9 @@
                         <div class="input-group">
                             <input type="text" class="form-control form-control-sm" placeholder="Search" aria-label="Serarch for article">
                             <div class="input-group-append">
-                                <button class="btn btn-sm" type="button" id="button-addon2" name="btn" aria-label="Search button"><i class="icon ion-md-search"></i></button>
+                                <button class="btn btn-sm" type="button" id="button-addon2" name="btn" aria-label="Search button">
+                                    <font-awesome-icon icon="search" />
+                                </button>
                             </div>
                         </div>
                     </div>

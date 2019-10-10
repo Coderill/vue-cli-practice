@@ -32,7 +32,7 @@
 
                         <!-- Image -->
                         <div class="image h-100">
-                            <img src="image/undraw_Waiting__for_you_ldha.svg" class="img-fluid rounded" alt="An image of camera">
+                            <img src="../assets/image/undraw_Waiting__for_you_ldha.svg" class="img-fluid rounded" alt="An image of camera">
                         </div>
                         <!-- End of the image -->
 

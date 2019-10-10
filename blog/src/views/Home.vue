@@ -1,9 +1,75 @@
 <template>
   <div class="home">
-    <div>
-      <font-awesome-icon icon="home" />
-      <font-awesome-icon icon="user-secret" />
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
     </div>
+
+
+
+    <div class="container background">
+      <div class="col">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus pariatur ut, aut quis magni ad optio accusamus, ipsa autem accusantium perferendis obcaecati minus qui adipisci consequatur vero vel ab illo?</p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus pariatur ut, aut quis magni ad optio accusamus, ipsa autem accusantium perferendis obcaecati minus qui adipisci consequatur vero vel ab illo?</p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus pariatur ut, aut quis magni ad optio accusamus, ipsa autem accusantium perferendis obcaecati minus qui adipisci consequatur vero vel ab illo?</p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus pariatur ut, aut quis magni ad optio accusamus, ipsa autem accusantium perferendis obcaecati minus qui adipisci consequatur vero vel ab illo?</p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus pariatur ut, aut quis magni ad optio accusamus, ipsa autem accusantium perferendis obcaecati minus qui adipisci consequatur vero vel ab illo?</p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus pariatur ut, aut quis magni ad optio accusamus, ipsa autem accusantium perferendis obcaecati minus qui adipisci consequatur vero vel ab illo?</p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus pariatur ut, aut quis magni ad optio accusamus, ipsa autem accusantium perferendis obcaecati minus qui adipisci consequatur vero vel ab illo?</p>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <Featured/>
 
@@ -44,13 +110,12 @@
                         </form>
                     </div>
                     <!-- End of the content -->
-
                 </div>
-                <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0 d-none d-lg-block">
 
+                <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0 d-none d-lg-block">
                     <!-- Image -->
                     <div class="image">
-                        <img src="image/undraw_newsletter_vovu.svg" class="img-fuid" alt="an illustration that is reffering newsletter">
+                        <img src="../assets/image/undraw_newsletter_vovu.svg" class="img-fuid" alt="an illustration that is reffering newsletter">
                     </div>
                     <!-- End of the image -->
 
@@ -61,22 +126,7 @@
     <!-- End of the newsletter -->
 
     <!-- Footer -->
-    <!-- <footer :style="{backgroundImage: 'url( ' + images.sample + ')'}"> -->
-    <footer :style="{backgroundImage: 'url( ' + require('@/assets/image/Untitled-1.svg') + ')'}">
-        <div class="container text-center">
-            <div class="social">
-                <a href="#"><i class="icon ion-logo-github" aria-label="Github"></i></a>
-                <a href="#"><i class="icon ion-logo-twitter" aria-label="Twitter"></i></a>
-                <a href="#"><i class="icon ion-logo-vimeo" aria-label="Github"></i></a>
-                <a href="#"><i class="icon ion-logo-googleplus" aria-label="Twitter"></i></a>
-            </div>
-            <div class="copyright">
-                <p>&COPY; 2019 All right reserved</p>
-                <p>Develop and technical support by <a href="#" aria-label="Devloped by maxsop">Maxsop</a></p>
-            </div>
-        </div>
-    </footer>
-    <!-- End of the footer -->
+    <Footer />
   </div>
 </template>
 
@@ -85,13 +135,15 @@
 import Featured from '@/components/FeaturedComponent.vue'
 import Posts from '@/components/PostsComponent.vue'
 import Aside from '@/components/AsideComponent.vue'
+import Footer from '@/components/FooterComponent.vue'
 
 export default {
   name: 'home',
   components: {
     Featured,
     Posts,
-    Aside
+    Aside,
+    Footer
   },
   data () {
     return {
@@ -100,8 +152,19 @@ export default {
       }
     }
   },
+  
   mounted () {
-    console.log(this.$router)
+    $('.background p:even').css({
+      borderWidth: '1px',
+      'border-style': 'solid',
+      'border-color': 'red'
+    });
   }
 }
 </script>
+
+<style lang="scss">
+  .background{
+    background-image:url('../assets/image/Surfer-bear-600x421.png');
+  }
+</style>

@@ -1,15 +1,11 @@
-# Lesson 3
+# Lesson 4
 
-1. Review lesson 2
-2. Convart HTML template to Vue (Template mastering)
-3. Component
-4. Install [Bootstrap][1] and use
-5. Import extranal SCSS file 
-6. Import static file
-7. Install and use [Fontawesome][2]
+1. Review lesson 3
+2. Install 3rd party plugins/library
+3. Install multiple plugins/library at a time
+4. How to use jquery
+5. How to import static file in SCSS 
+6. Import fontawesome brand icons [Fontawesome](https://fontawesome.com/)
 
 Fontawesome for Vue:
-[https://github.com/FortAwesome/vue-fontawesome](https://github.com/FortAwesome/vue-fontawesome)
-
-[1]: https://getbootstrap.com/
-[2]: https://fontawesome.com/
+[vue-fontawesome](https://github.com/FortAwesome/vue-fontawesome)
